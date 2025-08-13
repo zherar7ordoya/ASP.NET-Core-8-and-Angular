@@ -1,3 +1,5 @@
+// File: healthcheck.client/src/proxy.conf.js
+
 const { env } = require('process');
 
 const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :

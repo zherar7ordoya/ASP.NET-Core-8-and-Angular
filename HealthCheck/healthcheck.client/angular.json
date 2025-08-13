@@ -1,3 +1,5 @@
+// File: angular.json
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
@@ -139,7 +141,8 @@
       }
     }
   },
-  "cli": {
+  "cli":
+  {
     "analytics": "e69cc962-3182-4106-97a9-c3c4d840684e"
   }
 }
