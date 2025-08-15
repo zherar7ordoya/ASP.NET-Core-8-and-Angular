@@ -1,7 +1,10 @@
 /* Instantiate a WebApplicationBuilder */
+global using HealthCheck.Server;
+
 var builder = WebApplication.CreateBuilder(args);
 
 /* Add some services */
+builder.Services.AddHealthChecks().AddCheck<ICMPHealthCheck>("ICMP");
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -21,6 +24,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseHealthChecks(new PathString("/api/health"));
 app.MapControllers();
 app.MapFallbackToFile("/index.html");
 
