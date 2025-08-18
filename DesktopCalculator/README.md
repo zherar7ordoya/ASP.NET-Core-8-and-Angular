@@ -1,5 +1,7 @@
 # DesktopCalculator
 
+> [Artículo original (C# Corner)](https://www.c-sharpcorner.com/article/create-a-desktop-application-with-angular-electron-framework/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
 ## Development server
