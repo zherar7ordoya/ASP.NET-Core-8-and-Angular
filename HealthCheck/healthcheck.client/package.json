@@ -1,8 +1,7 @@
 {
   "name": "healthcheck.client",
   "version": "0.0.0",
-  "scripts":
-  {
+  "scripts": {
     "ng": "ng",
     "start": "run-script-os",
     "build": "ng build",
@@ -13,13 +12,14 @@
     "start:default": "ng serve --ssl --ssl-cert \"$HOME/.aspnet/https/${npm_package_name}.pem\" --ssl-key \"$HOME/.aspnet/https/${npm_package_name}.key\" --host=127.0.0.1"
   },
   "private": true,
-  "dependencies":
-  {
+  "dependencies": {
     "@angular/animations": "^17.3.0",
+    "@angular/cdk": "^17.3.0",
     "@angular/common": "^17.3.0",
     "@angular/compiler": "^17.3.0",
     "@angular/core": "^17.3.0",
     "@angular/forms": "^17.3.0",
+    "@angular/material": "^17.3.0",
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
@@ -29,8 +29,7 @@
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
-  "devDependencies":
-  {
+  "devDependencies": {
     "@angular-devkit/build-angular": "^17.3.17",
     "@angular/cli": "^17.3.17",
     "@angular/compiler-cli": "^17.3.0",
