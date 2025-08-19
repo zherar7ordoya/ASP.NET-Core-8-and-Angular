@@ -12,3 +12,7 @@ th, td {
 table {
     margin: 0 auto;
 }
+
+.container { 
+  padding: 10px;
+}
