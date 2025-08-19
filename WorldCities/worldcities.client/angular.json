@@ -82,10 +82,11 @@
 						}
 					},
 					"defaultConfiguration": "development",
-					"options": {
-						"proxyConfig": "src/proxy.conf.js",
-						"port": 59871
-					}
+          "options":
+          {
+            "proxyConfig": "src/proxy.conf.js",
+            "port": 4200
+          }
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
