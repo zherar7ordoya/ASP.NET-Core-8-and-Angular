@@ -1,9 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WorldCities.Server.Data.Models;
 
 [Table("Cities")]
+[Index(nameof(Name))]
+[Index(nameof(Lat))]
+[Index(nameof(Lon))]
 public class City
 {
     #region PROPERTIES
