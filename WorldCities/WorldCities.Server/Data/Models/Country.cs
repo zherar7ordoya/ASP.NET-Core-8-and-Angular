@@ -5,8 +5,7 @@ namespace WorldCities.Server.Data.Models;
 
 public class Country
 {
-    #region Properties
-
+    #region PROPERTIES
     /// <summary>
     /// The unique id and primary key for this Country 
     /// </summary>
@@ -28,6 +27,14 @@ public class Country
     /// Country code (in ISO 3166-1 ALPHA-3 format) 
     /// </summary>
     public required string ISO3 { get; set; }
+    #endregion
 
+    // === *** ===
+
+    #region NAVIGATION PROPERTIES
+    /// <summary>
+    /// A collection of all the cities related to this country. 
+    /// </summary>
+    public ICollection<City>? Cities { get; set; }
     #endregion
 }

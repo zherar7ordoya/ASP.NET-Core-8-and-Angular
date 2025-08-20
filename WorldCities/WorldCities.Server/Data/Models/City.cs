@@ -5,8 +5,7 @@ namespace WorldCities.Server.Data.Models;
 
 public class City
 {
-    #region Properties
-
+    #region PROPERTIES
     /// <summary>
     /// The unique id and primary key for this City 
     /// </summary>
@@ -34,7 +33,17 @@ public class City
     /// <summary>
     /// Country Id (foreign key) 
     /// </summary>
+    [ForeignKey(nameof(Country))]
     public int CountryId { get; set; }
-
     #endregion
+
+    // === *** ===
+
+    #region NAVIGATION PROPERTIES
+    /// <summary>
+    /// The country related to this city. 
+    /// </summary>
+    public Country? Country { get; set; }
+    #endregion
+
 }
