@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WorldCities.Server.Data.Models;
 
+[Table("Countries")]
 public class Country
 {
     #region PROPERTIES
