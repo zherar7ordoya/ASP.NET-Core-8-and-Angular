@@ -9,6 +9,6 @@ Visual Studio 2022 Professional Product Key:
 NXXPC-Q94CK-YJYWC-JTQVW-9TR8X
 TD244-P4NB7-YQ6XK-Y8MMM-YWV2J
 
-Download Visual Studio 2022 Pro 17.6 (Spring 2023 LTSC):
+Download Visual Studio 2022 Pro 17.10 (Spring 2024 LTSC):
 
-https://aka.ms/vs/17/release.ltsc.17.6/vs_professional.exe
+https://aka.ms/vs/17/release.ltsc.17.10/vs_professional.exe
