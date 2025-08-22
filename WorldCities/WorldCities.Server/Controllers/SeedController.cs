@@ -16,7 +16,8 @@ public class SeedController
     IWebHostEnvironment env
 ) : ControllerBase
 {
-    [HttpGet]
+
+    [HttpGet("Import")]
     public async Task<ActionResult> Import()
     {
         // prevents non-development environments from running this method 
