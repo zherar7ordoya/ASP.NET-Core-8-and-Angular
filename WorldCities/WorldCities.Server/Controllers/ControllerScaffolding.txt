@@ -1,0 +1,3 @@
+dotnet aspnet-codegenerator controller --controllerName CitiesController --model City --dataContext ApplicationDbContext --relativeFolderPath Controllers --useAsyncActions
+
+dotnet aspnet-codegenerator controller --controllerName CountriesController --model Country --dataContext ApplicationDbContext --relativeFolderPath Controllers --useAsyncActions
