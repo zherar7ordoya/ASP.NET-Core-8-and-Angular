@@ -1,46 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <SpaRoot>..\worldcities.client</SpaRoot>
-    <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
-    <SpaProxyServerUrl>https://localhost:59871</SpaProxyServerUrl>
-    <UserSecretsId>WorldCities.Server</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<SpaRoot>..\worldcities.client</SpaRoot>
+		<SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
+		<SpaProxyServerUrl>https://localhost:59871</SpaProxyServerUrl>
+		<UserSecretsId>WorldCities.Server</UserSecretsId>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="System.Text.Json" Version="8.0.5" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="EPPlus" Version="8.1.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\worldcities.client\worldcities.client.esproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
 
 	<ItemGroup>
-    <PackageReference Include="EPPlus" Version="8.1.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.3" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\worldcities.client\worldcities.client.esproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\Source\" />
-  </ItemGroup>
+		<Folder Include="Data\Source\" />
+	</ItemGroup>
 
 </Project>
